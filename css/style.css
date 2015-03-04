@@ -5,6 +5,25 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: none;
 }
+
+/*add inline css for webfonts*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/K88pR3goAWT7BTt32Z01m1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzCUUniRZcd_wq8DYmIfsw2A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
 body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
 body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
 
@@ -43,6 +62,7 @@ footer {
 footer span { float: right; font-style: italic; }
 
 /* Smartphones (portrait) */
+/* Tried putting phone css in a separate file to optimize*/
 @media only screen and (max-width: 480px) {
   body { font-size: 12px;}
   header p { padding-left: 4.5em;}
