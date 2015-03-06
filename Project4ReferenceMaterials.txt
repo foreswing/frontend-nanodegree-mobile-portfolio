@@ -1,0 +1,31 @@
+Project 4 Reference Materials
+
+Explore & Master Chrome DevTools Course - Codeschool.com – completed entire course
+Web Fundamentals Course – developers.google.com– completed entire course
+PageSpeed Rules & Recommendations
+Stackoverflow
+MDN
+CSS Tricks
+WC3
+New Program Tools Used or Researched
+	Chrome Canary
+	PageSpeed Insights Plug-in
+	JAVA V8 SE Developer Kit
+	Apache ANT
+	Google Closure-compiler
+	Chapters 1-2 of High Performance Browser Networking
+Office Hours – Optimizations for Project 4 (twice)
+•	updatePositions is function that must be optimized
+•	what are the exact numbers that phase and scrollTop use … can we streamline this?
+o	Get whatever calculations can be removed from the for loop to outside.
+o	It’s the same 5 numbers for all pizzas – how do we optimize this? Store 5 numbers and use them to change element position.
+o	Use transform property to change left position on each pizza
+o	Force elements in layer using (pizza_stage2, 3)
+	Transform: translateX() 
+	Transform: translateZ()
+	Transform: translate3D()
+	Backface-visibility: hidden
+o	How many pizzas do we need to animate?
+o	Only paint moving pizza’s (render pizzas into individual layers)
+o	User backface-visibility: hidden to reduce paint ---put in ‘mover’ class
+o	Go to rendering and select show composited border layers
