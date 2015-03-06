@@ -29,10 +29,14 @@ form {
   font-weight: 800;
 }
 
+/* I added the backface-visibility parameter to the mover variable to increase performance by putting each pizza into 
+   its own layer as per office hours recommendation*/
+
 .mover {
   position: fixed;
   width: 256px;
   z-index: -1;
+  backface-visibility: hidden;
 }
 
 .randomPizzaContainer {
